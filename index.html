@@ -1,0 +1,755 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SoftAIC</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <style>
+
+        .btn-primary {
+            background-color: #007BFF;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    
+        .card.card-body {
+            transition: all 0.3s ease;
+        }
+    
+        #blackColor{
+            color: black !important;
+        }
+    
+    
+        .links li a {
+        text-decoration: none;
+        font-weight: normal;
+        color: #333; /* Base color */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+    
+    .links li a:hover {
+        font-weight: bold; /* Bold on hover */
+        color: #000; /* Slightly darker color for emphasis */
+    }
+    
+    
+    </style>
+
+<header id="header" style="background: transparent !important;">
+    <!-- Logo para pantallas grandes (horizontales) -->
+    <div class="logo" id="log1">
+        <a href="index.html">SoftAIC.com / SOFTWARE & A. I. CONSULTING <span></span></a>
+    </div>
+
+    <!-- Logo para pantallas pequeñas (celulares) -->
+    <div class="logo" id="log2">
+        <a href="index.html">SoftAIC.com Software I.A. Cons <span></span></a>
+    </div>
+
+    <a href="#menu"><span>Menu</span></a>
+</header>
+
+<script>
+    function updateLogoVisibility() {
+        var width = window.innerWidth;
+
+        // Mostrar el logo adecuado según el tamaño de la pantalla
+        if (width < 768) {
+            document.getElementById('log1').style.display = 'none'; // Ocultar log1 en pantallas pequeñas
+            document.getElementById('log2').style.display = 'block'; // Mostrar log2 en pantallas pequeñas
+        } else {
+            document.getElementById('log1').style.display = 'block'; // Mostrar log1 en pantallas grandes
+            document.getElementById('log2').style.display = 'none'; // Ocultar log2 en pantallas grandes
+        }
+    }
+
+    updateLogoVisibility()
+    // Llamar a la función cuando la página se carga
+    window.onload = updateLogoVisibility();
+
+    // Llamar a la función cada vez que el tamaño de la ventana cambia
+    window.onresize = updateLogoVisibility();
+</script>
+
+    <!-- Nav -->
+    <nav id="menu" style="background-image: url('images/ia1.webp'); background-color: white; color: white;">
+        <ul class="links" style="background:transparent !important; color:white !important">
+            <p style="font-size:1.3rem" href="index.html">Software & AI Consulting </p>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#one">Agentes IA</a></li>
+            <li><a href="#two">Tiendas online / Ecommerce</a></li>
+            <li><a href="https://usatiendafacil.com/">Usatiendafacil</a></li>
+            <li><a href="#three">Landing page & paginas web</a></li>
+            <li><a href="#four">Apps web, Android, Apple & híbridas</a></li>
+            <li><a href="#five">Desarrollo de software a medida</a></li>
+            <li><a href="#six">Staffing</a></li>
+            <li><a href="#seven">Nuestras tecnologías</a></li>
+            <li hidden><a href="#staff">Portfolio & clientes</a></li>
+            <li><a href="#ocho">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <br><br>
+            <li hidden><a href="generic.html">Generic</a></li>
+            <li hidden><a href="elements.html">Elements</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner" class="bg-img" data-bg="ia3.jpg" >
+        <div>
+            <header id="banner-header" style="margin-top: 15rem;">
+
+            </header>
+        </div>
+        <a href="#one" class="more">Learn More</a>
+    </section>
+
+    <script>
+        // Función para ajustar el margin-top en función del tamaño de la pantalla
+function adjustBannerMargin() {
+    const header = document.getElementById('banner-header');
+    
+    if (window.innerWidth <= 768) {
+        // Pantallas pequeñas (verticales)
+        header.style.marginTop = '25rem';
+    } else {
+        // Pantallas grandes
+        header.style.marginTop = '15rem';
+    }
+}
+
+// Llamar a la función cuando la página se carga y cuando la ventana cambia de tamaño
+window.addEventListener('load', adjustBannerMargin);
+window.addEventListener('resize', adjustBannerMargin);
+
+    </script>
+
+<!-- Agentes IA-->
+<section id="one" class="wrapper post bg-img" data-bg="agent2.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box" style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 1.5rem;">
+            <header>
+                <h2>Agentes IA</h2>
+                <h6>Bienvenido a la era de la transformación digital impulsada por la inteligencia artificial.</h6>
+            </header>
+            <div class="content" style="color: white !important;">
+                <p>
+                    En este nuevo paradigma, tienes la oportunidad de evolucionar tu negocio con tecnología de vanguardia o quedarte observando cómo otros lideran. Algunas preguntas clave que surgen en este contexto son:
+                </p>
+                <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                    <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                        ¿Qué es un agente IA y cómo funciona?
+                    </li>
+                    <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                        ¿Qué beneficios me ofrece y a mis clientes?
+                    </li>
+                    <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                        ¿Qué criterios debo considerar al implementar IA en mi negocio?
+                    </li>
+                    <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                        ¿Aplica para mi empresa y cómo puede optimizar mis procesos internos?
+                    </li>
+                    <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                        ¿Estas herramienta de IA, son competencia o un socio estratégico para mi equipo?
+                    </li>
+                </ul>
+            </div>
+            <footer style="margin-top: 1.5rem;" style="">
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#extraContent" aria-expanded="false" aria-controls="extraContent" style="color: black !important; border: none; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">
+                    Descubre Más
+                </button>
+
+                <div class="collapse mt-3" id="extraContent">
+                    <div class="card card-body" style="background-color: rgba(144, 144, 144, 0.25) !important; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 2rem;">
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">¿Qué es un agente de IA?</h2>
+                        <p>Un agente de inteligencia artificial (IA) es un programa o sistema diseñado para realizar tareas específicas de manera autónoma o semiautónoma. Estos agentes pueden analizar datos, aprender de ellos y tomar decisiones basadas en patrones o reglas predefinidas. Ejemplos incluyen chatbots, asistentes virtuales, sistemas de recomendación y herramientas de automatización empresarial.</p>
+                        
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">¿Para qué sirve un agente de IA?</h2>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Automatizar tareas repetitivas: Liberan a los empleados de tareas monótonas, como responder preguntas frecuentes o procesar datos.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Mejorar la atención al cliente: Responden consultas en tiempo real, 24/7, mejorando la experiencia del cliente.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Optimizar procesos internos: Detectan ineficiencias y proponen soluciones basadas en datos.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Generar insights valiosos: Analizan grandes volúmenes de información para ayudar en la toma de decisiones estratégicas.
+                            </li>
+                        </ul>
+                        
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">¿Pueden potenciar mi trabajo o mi empresa?</h2>
+                        <p>¡Definitivamente! Los agentes de IA no solo potencian la productividad, sino que también ofrecen ventajas competitivas:</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Aumentan la eficiencia: Reducen costos operativos y tiempos de respuesta.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Mejoran la toma de decisiones: Proveen datos precisos y análisis predictivos.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Personalizan la experiencia del cliente: Adaptan sus respuestas y recomendaciones según las necesidades individuales.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Escalan operaciones: Manejan volúmenes de trabajo imposibles para equipos humanos sin aumentar costos.
+                            </li>
+                        </ul>
+                        
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">¿Son una competencia o un aliado?</h2>
+                        <p>Los agentes de IA son <strong>aliados estratégicos</strong>, no una competencia. En lugar de reemplazar a las personas, complementan su trabajo, permitiendo que los equipos humanos se concentren en tareas más creativas y de alto impacto. Por ejemplo:</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Los agentes pueden manejar tareas simples mientras los empleados desarrollan estrategias.
+                            </li>
+                            <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                Facilitan la innovación al reducir la carga operativa.
+                            </li>
+                        </ul>
+                        
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">Los 10 Tipos de Agentes de IA Más Usados por las Empresas</h2>
+                        
+                        <h3 style="color: #fff;">1. Agentes de IA para Atención al Cliente (Chatbots)</h3>
+                        <p>Los chatbots son agentes de IA que interactúan con los usuarios en tiempo real. Están diseñados para responder preguntas frecuentes, resolver problemas y proporcionar soporte las 24 horas del día, los 7 días de la semana. Los chatbots pueden ser programados para entender el lenguaje natural y realizar tareas específicas, como hacer reservas, realizar compras o incluso dar recomendaciones personalizadas.</p>
+                        
+                        <h3 style="color: #fff;">2. Agentes de IA para Automatización de Procesos (RPA)</h3>
+                        <p>La automatización de procesos robóticos (RPA) utiliza agentes de IA para automatizar tareas repetitivas y de bajo valor, como la entrada de datos, la facturación y el procesamiento de pedidos. Estos agentes pueden realizar trabajos que normalmente requieren intervención humana, pero de forma más rápida y precisa, lo que mejora la eficiencia y reduce los errores.</p>
+                        
+                        <h3 style="color: #fff;">3. Agentes de IA para Análisis Predictivo</h3>
+                        <p>Estos agentes se utilizan para analizar grandes volúmenes de datos y prever tendencias futuras. Utilizan algoritmos avanzados para identificar patrones en los datos históricos y generar predicciones sobre el comportamiento futuro de los clientes, las ventas o el mercado. Este tipo de IA ayuda a las empresas a tomar decisiones más informadas y a planificar con anticipación.</p>
+                        
+                        <h3 style="color: #fff;">4. Agentes de IA para Personalización</h3>
+                        <p>Los agentes de IA para personalización se utilizan en plataformas de comercio electrónico y marketing digital para crear experiencias personalizadas para los usuarios. Analizan los comportamientos y preferencias de los clientes para recomendar productos, servicios o contenido específico, mejorando la satisfacción del cliente y aumentando las conversiones.</p>
+                        
+                        <h3 style="color: #fff;">5. Agentes de IA para Ciberseguridad</h3>
+                        <p>Los agentes de IA para ciberseguridad utilizan algoritmos para detectar y prevenir amenazas cibernéticas. Analizan patrones en los datos de tráfico de la red y en los comportamientos de los usuarios para identificar actividades sospechosas y prevenir posibles ataques antes de que ocurran. Esto ayuda a las empresas a proteger sus sistemas y datos sensibles de manera más eficiente.</p>
+                
+                        <h3 style="color: #fff;">6. Agentes de IA para Gestión de Inventarios</h3>
+                        <p>Estos agentes se utilizan para optimizar la gestión de inventarios, analizando patrones de demanda y ofreciendo recomendaciones para reabastecer productos de manera eficiente. Pueden predecir la demanda futura y ayudar a las empresas a mantener niveles óptimos de inventario, reduciendo costos de almacenamiento y evitando desabastecimientos.</p>
+                
+                        <h3 style="color: #fff;">7. Agentes de IA para Marketing Digital</h3>
+                        <p>Los agentes de IA para marketing digital analizan grandes volúmenes de datos de clientes y usuarios para crear campañas publicitarias más efectivas. Utilizan el aprendizaje automático para personalizar anuncios, segmentar audiencias y optimizar estrategias de marketing en tiempo real, lo que permite a las empresas maximizar su retorno de inversión (ROI).</p>
+                
+                        <h3 style="color: #fff;">8. Agentes de IA para Soporte en Ventas</h3>
+                        <p>Los agentes de IA para ventas ayudan a los equipos comerciales a gestionar relaciones con los clientes, automatizando tareas como la programación de citas, el seguimiento de oportunidades de ventas y la actualización de bases de datos de clientes. También pueden predecir el comportamiento de compra y ayudar a los vendedores a priorizar leads con mayor potencial de conversión.</p>
+                
+                        <h3 style="color: #fff;">9. Agentes de IA para Producción</h3>
+                        <p>En el ámbito de la producción, los agentes de IA optimizan los procesos de fabricación al predecir fallos en las máquinas, gestionar el mantenimiento preventivo y mejorar la eficiencia operativa. Pueden analizar datos de sensores en tiempo real y proporcionar recomendaciones para ajustar la producción y minimizar el tiempo de inactividad.</p>
+                
+                        <h3 style="color: #fff;">10. Agentes de IA para Recursos Humanos</h3>
+                        <p>Los agentes de IA para recursos humanos ayudan en la selección de personal, la evaluación de candidatos y la gestión del talento. Pueden analizar currículos, realizar entrevistas iniciales automatizadas y predecir el desempeño futuro de los empleados, lo que facilita el proceso de contratación y mejora la calidad de las decisiones en recursos humanos.</p>
+                
+                        <h2 style="color: #fff; padding-bottom: 0.5rem; margin-bottom: 1rem;">Desarrolla y Mantén un Equipo de Agentes de IA que Potencien tu Empresa</h2>
+                        <p>Desarrollar y mantener un equipo de agentes de IA es una estrategia clave para optimizar la operación de tu empresa. Estos agentes pueden ser diseñados para colaborar con tu personal humano, permitiendo que se concentren en tareas de mayor valor. Además, los agentes de IA no solo incrementan la eficiencia y reducen los costos operativos, sino que también mejoran la toma de decisiones, personalizan la experiencia del cliente y permiten que las empresas escalen sin necesidad de aumentar los costos laborales.</p>
+                        <p>Con un costo mínimo y un impacto significativo, puedes potenciar la productividad de tu equipo, reducir tiempos de respuesta y mejorar la calidad de los servicios ofrecidos. Al integrar agentes de IA en tu equipo, puedes lograr una mayor efectividad, optimizando recursos y maximizando resultados, lo que se traduce en una ventaja competitiva duradera.</p>
+                        <p>También es cierto que debes saber cuando un cliente debe ser atendido por una IA y cuando por un humano para no perder la calidad y calidez humana en tus clientes aun cunado muchos de tus cientes puede que también se comuniquen con tu empresa por IA. es un gran desafió que te enseñaremos a abordar de forma orgánica y profesional con nuestro capacitado staff de profesionales... "Humanos...""  </p>
+                        
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <a href="#footer" class="btn btn-light" style="text-decoration: none; color: black; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta evaluativa ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        
+
+
+
+
+    </div>
+    <a href="#two" class="more">Learn More</a>
+</section>
+
+
+<!-- Tienda Online-->
+<section id="two" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>¿Por qué tener tu propia tienda online?</h2>
+            </header>
+            <div class="content">
+                <p>Si bien existen plataformas y redes sociales famosas que ofrecen opciones para vender, tener tu propia tienda online te brinda ventajas únicas. Control total sobre tu marca, independencia en la gestión de precios y promociones, y una mejor experiencia de compra para tus clientes.</p>
+
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentTwo" aria-expanded="false" aria-controls="extraContentTwo">
+                    Descubre Más
+                </button>
+
+                <div class="collapse mt-3" id="extraContentTwo">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold ">Ventajas de tener tu propia tienda online</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Control total:</strong> Gestiona el diseño, precios y promociones de tu tienda según tu visión.</li>
+                            <li><strong>Independencia:</strong> No dependes de comisiones ni reglas de plataformas externas como Mercado Libre.</li>
+                            <li><strong>Mejor experiencia de compra:</strong> Ofrece un proceso de compra optimizado, rápido y sin distracciones.</li>
+                            <li><strong>Acceso a datos valiosos:</strong> Obtén información detallada sobre el comportamiento de tus clientes.</li>
+                            <li><strong>Escalabilidad:</strong> A medida que creces, tu tienda online se adapta y evoluciona.</li>
+                        </ul>
+                        <hr class="my-4" style="border-top: 2px solid #007bff;">
+                        <h4 class="text-uppercase font-weight-bold ">Estrategias para dar a conocer tu tienda online</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Redes Sociales:</strong> Utiliza plataformas como Instagram y Facebook para conectar con tu audiencia.</li>
+                            <li><strong>Publicidad Digital:</strong> Anuncios dirigidos a tu público objetivo para aumentar el alcance.</li>
+                            <li><strong>Marketing de Contenidos:</strong> Crea blogs, videos y tutoriales que atraigan tráfico a tu tienda.</li>
+                            <li><strong>Email Marketing:</strong> Mantén a tus clientes comprometidos con promociones y novedades.</li>
+                            <li><strong>Influencers:</strong> Colabora con influencers para expandir tu alcance y ganar confianza.</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;" class="btn btn-light">
+                        <a href="#footer" style="text-decoration: none; color: black; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta evaluativa ahora</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#three" class="more">Descubre Más</a>
+</section>
+
+
+<!-- landing y paginas web-->
+<section id="three" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>Landing Page vs Página Web</h2>
+            </header>
+            <div class="content">
+                <p>Las diferencias entre una <strong>Landing Page</strong> y una <strong>Página Web</strong> son cruciales para comprender su propósito y la forma en que se utilizan en estrategias de marketing digital y diseño web. Ambas cumplen roles importantes, pero su enfoque y objetivos son muy distintos.</p>
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentThree" aria-expanded="false" aria-controls="extraContentThree">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentThree">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold ">Landing Page</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Objetivo único:</strong> Convertir a los visitantes en clientes o leads mediante una acción específica.</li>
+                            <li><strong>Diseño minimalista:</strong> Un diseño limpio y directo para minimizar distracciones.</li>
+                            <li><strong>Contenido conciso:</strong> Información clara y breve para captar rápidamente la atención.</li>
+                            <li><strong>Llamada a la acción (CTA) destacada:</strong> Un único botón que guía al usuario hacia una acción clara.</li>
+                            <li><strong>Sin navegación:</strong> No se incluyen menús para mantener al usuario enfocado en el objetivo.</li>
+                        </ul>
+                        <hr class="my-4" style="border-top: 2px solid #007bff;">
+                        <h4 class="text-uppercase font-weight-bold ">Página Web</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Objetivos múltiples:</strong> Ofrecer información, productos, servicios, contacto y más, con diversos propósitos.</li>
+                            <li><strong>Navegación estructurada:</strong> Menús y enlaces que permiten explorar diversas secciones del sitio.</li>
+                            <li><strong>Contenido extenso:</strong> Información detallada y variada para satisfacer diferentes necesidades del usuario.</li>
+                            <li><strong>Múltiples llamadas a la acción:</strong> Varios botones y enlaces que invitan a realizar diversas acciones.</li>
+                            <li><strong>Diseño adaptable:</strong> El diseño varía según la sección y el propósito del sitio, ofreciendo flexibilidad.</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#footer" style="text-decoration: none; background-color: #fff; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta ahora</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#four" class="more">Descubre Más</a>
+</section>
+
+<!--Aplicasiones-->
+<section id="four" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>Aplicaciones WEB, Android & iOS, Híbridas & PWA</h2>
+            </header>
+            <div class="content">
+                <p>Explora las diferencias y descubre cuál se adapta mejor a tus necesidades.</p>
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentApps" aria-expanded="false" aria-controls="extraContentApps">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentApps">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.5);">
+                        <section style="margin-bottom: 1.5rem;">
+                            <h3 style="padding-bottom: 0.5rem;">Aplicaciones Web</h3>
+                            <p>
+                                Son accesibles desde navegadores y no requieren instalación. Ideales para alcanzar un público amplio con menor costo de desarrollo, aunque dependen de la conexión a internet.
+                            </p>
+                        </section>
+                        <section style="margin-bottom: 1.5rem;">
+                            <h3 style="padding-bottom: 0.5rem;">Aplicaciones Nativas (Android & iOS)</h3>
+                            <p>
+                                Diseñadas específicamente para cada sistema operativo, ofrecen el mejor rendimiento y acceso completo a funcionalidades del dispositivo, pero requieren más tiempo y presupuesto para desarrollarse.
+                            </p>
+                        </section>
+                        <section style="margin-bottom: 1.5rem;">
+                            <h3 style="padding-bottom: 0.5rem;">Aplicaciones Híbridas</h3>
+                            <p>
+                                Combinan tecnologías web y nativas, permitiendo un desarrollo más rápido y económico, aunque con un rendimiento ligeramente inferior al de las aplicaciones nativas.
+                            </p>
+                        </section>
+                        <section style="margin-bottom: 1.5rem;">
+                            <h3 style="padding-bottom: 0.5rem;">Aplicaciones Progresivas (PWA)</h3>
+                            <p>
+                                Son aplicaciones web que se comportan como nativas. Ofrecen instalación en el dispositivo, soporte offline y actualizaciones automáticas, siendo una solución intermedia con excelente relación costo-beneficio.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 style="padding-bottom: 0.5rem;">¿Cuál conviene más?</h3>
+                            <p>
+                                La elección depende de tus objetivos:
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+                                <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <strong>Web:</strong> Si buscas alcance global con presupuesto limitado.
+                                </li>
+                                <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <strong>Nativa:</strong> Para ofrecer la mejor experiencia en dispositivos específicos.
+                                </li>
+                                <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <strong>Híbrida:</strong> Cuando necesitas presencia en múltiples plataformas rápidamente.
+                                </li>
+                                <li style="margin: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <strong>PWA:</strong> Si buscas un equilibrio entre costo, funcionalidad y experiencia de usuario.
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#footer" style="text-decoration: none; background-color: #fff; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta ahora</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+        
+    </div>
+    <a href="#five" class="more">Learn More</a>
+</section>
+
+<!-- Software factory -->
+<section id="five" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>Software Factory a Medida</h2>
+            </header>
+            <div class="content" style="text-align: left;">
+                <p>Nuestra <strong>Software Factory</strong> es una empresa especializada en el desarrollo de software a medida con el personal mas calificado de 3 continentes, donde se construyen soluciones tecnológicas adaptadas a las necesidades específicas de cada cliente. Utilizando un equipo altamente capacitado y herramientas de última generación, nuestra software factory crea aplicaciones robustas y escalables para optimizar procesos y mejorar la competitividad de tu negocio.</p>
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentThree" aria-expanded="false" aria-controls="extraContentThree">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentThree" align="left">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold ">¿Qué hace nuestra Software Factory?</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Desarrollo de software a medida:</strong> <br> Creamos soluciones tecnológicas adaptadas a las necesidades únicas de tu empresa.</li>
+                            <li><strong>Personal altamente capacitado:</strong> <br> Contamos con un equipo de expertos en diversas tecnologías y metodologías de desarrollo ágil.</li>
+                            <li><strong>Uso de herramientas avanzadas:</strong> <br> Implementamos las tecnologías más modernas, incluyendo las Inteligencias Artificiales más populares, para mejorar la calidad y eficiencia del software.</li>
+                            <li><strong>Optimización de procesos:</strong> <br> Ayudamos a automatizar y optimizar los procesos de negocio, mejorando la productividad y reduciendo costos.</li>
+                            <li><strong>Soporte continuo:</strong> <br> Ofrecemos mantenimiento y actualizaciones constantes para asegurar el funcionamiento eficiente y seguro de tus aplicaciones.</li>
+                        </ul>
+                        <h4 class="text-uppercase font-weight-bold ">Ventajas de elegir nuestra Software Factory</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Soluciones personalizadas:</strong> <br> Desarrollamos aplicaciones específicas para tu negocio, sin limitaciones de plataformas predefinidas.</li>
+                            <li><strong>Metodologías ágiles:</strong> <br> Usamos metodologías ágiles para entregas rápidas y adaptabilidad a los cambios en los requisitos.</li>
+                            <li><strong>Innovación constante:</strong> <br> Aplicamos las últimas tecnologías en IA, Machine Learning y Big Data para crear soluciones de vanguardia.</li>
+                            <li><strong>Escalabilidad:</strong> <br> Nuestras soluciones están diseñadas para crecer junto con tu empresa, permitiendo una expansión sin inconvenientes.</li>
+                            <li><strong>Mejora continua:</strong> <br> Aprovechamos la inteligencia artificial para monitorear y mejorar el rendimiento del software a lo largo del tiempo. Utilizamos herramientas avanzadas como <strong>ChatGPT-4</strong> para optimizar el desarrollo y la calidad del software, proporcionando recomendaciones inteligentes para la mejora continua del código y la experiencia del usuario. Además, integramos herramientas de IA en el proceso de QA, como <strong>GitHub Copilot</strong> (basado en Codex), <strong>Tabnine</strong>, <strong>SonarQube</strong>, <strong>Testim.io</strong>, y <strong>Applitools</strong>, que permiten realizar pruebas automatizadas con precisión y detectar errores antes de que lleguen al cliente. Estas tecnologías nos permiten garantizar un ciclo de retroalimentación constante, asegurando que cada versión del software sea más eficiente, segura y alineada con las necesidades de tu negocio.</li>
+                            <li><strong>QA Testers especializados en IA:</strong> <br> Nuestro equipo de QA testers con experiencia en IA asegura que cada solución desarrollada esté libre de errores y funcione de manera óptima, utilizando pruebas automatizadas y manuales para garantizar la calidad.</li>
+                            <li><strong>Garantía de satisfacción permanente:</strong> <br> Nos comprometemos a ofrecer soluciones que cumplan con tus expectativas. Si no estás completamente satisfecho con el resultado, trabajaremos hasta que lo estés, con soporte continuo y mejoras permanentes.</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#footer" style="text-decoration: none; background-color: #fff; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta ahora</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#six" class="more">Solicita una consulta personalizada</a>
+</section>
+
+
+<!-- Staffing Personal especializado en desarrollo de software -->
+<section id="six" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>STAFFING <br> Tenemos y conseguimos el mejor Personal para el Desarrollo de Software</h2>
+            </header>
+            <div class="content" style="text-align: left;">
+                <p>En nuestra empresa, ofrecemos el mejor staff de profesionales altamente capacitados en todas las áreas del desarrollo de software. Desde <strong>Frontend</strong> hasta <strong>Backend</strong>, <strong>QA</strong>, y otros roles especializados, nuestro equipo está listo para ofrecerte las mejores soluciones. Con personal de 3 continentes, nos aseguramos de contar con los mejores talentos, con la experiencia y las herramientas más avanzadas para llevar tu proyecto al siguiente nivel.</p>
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentThe" aria-expanded="false" aria-controls="extraContentThe">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentThe" align="left">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold ">¿Qué hace nuestro personal especializado?</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Desarrollo Frontend:</strong> <br> Nuestros expertos en frontend crean interfaces de usuario atractivas, intuitivas y altamente funcionales utilizando tecnologías modernas como React, Angular y Vue.js.</li>
+                            <li><strong>Desarrollo Backend:</strong> <br> Contamos con un equipo de backend que desarrolla soluciones robustas y escalables utilizando tecnologías como Node.js, Python, Java, y .NET.</li>
+                            <li><strong>QA (Control de Calidad):</strong> <br> Nuestro equipo de QA asegura que cada línea de código esté libre de errores, realizando pruebas automatizadas y manuales con herramientas avanzadas como Selenium, JUnit y TestNG.</li>
+                            <li><strong>DevOps:</strong> <br> Los expertos en DevOps optimizan el ciclo de vida del software, implementando integración continua (CI) y entrega continua (CD) con herramientas como Jenkins, Docker y Kubernetes.</li>
+                            <li><strong>UX/UI Design:</strong> <br> Nuestros diseñadores UX/UI trabajan para garantizar que la experiencia del usuario sea fluida y atractiva, asegurando que tu aplicación sea fácil de usar y visualmente atractiva.</li>
+                        </ul>
+                        <h4 class="text-uppercase font-weight-bold ">Ventajas de elegir nuestro staff de desarrollo</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Profesionales altamente capacitados:</strong> <br> Nuestro personal está compuesto por expertos con años de experiencia en sus respectivas áreas, comprometidos con la calidad y la excelencia.</li>
+                            <li><strong>Adaptabilidad:</strong> <br> Nuestros profesionales se adaptan rápidamente a los cambios en los requisitos del proyecto, utilizando metodologías ágiles para entregar resultados de manera eficiente.</li>
+                            <li><strong>Innovación constante:</strong> <br> Nuestro equipo está siempre al tanto de las últimas tendencias y tecnologías, utilizando herramientas avanzadas para mejorar la calidad del software.</li>
+                            <li><strong>Escalabilidad y flexibilidad:</strong> <br> Ofrecemos personal especializado para proyectos de cualquier tamaño, desde pequeñas aplicaciones hasta grandes plataformas empresariales.</li>
+                            <li><strong>Compromiso con la calidad:</strong> <br> Nuestros testers especializados en IA, junto con nuestras herramientas avanzadas de control de calidad, aseguran que el software entregado cumpla con los más altos estándares de rendimiento y seguridad.</li>
+                            <li><strong>Soporte continuo:</strong> <br> Ofrecemos soporte constante para asegurar que tu equipo tenga todo lo necesario para llevar a cabo el proyecto sin contratiempos, con mantenimiento y actualizaciones continuas.</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#footer" style="text-decoration: none; background-color: #fff; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta ahora</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#seven" class="more">Solicita una consulta personalizada</a>
+</section>
+
+<!-- Tecnologías que utilizamos -->
+<section id="seven" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>Las Tecnologías que Dominamos</h2>
+                <p>03/01/2025</p>
+            </header>
+            <div class="content" style="text-align: left;">
+                <p>En nuestra empresa, estamos comprometidos con el uso de las mejores y más avanzadas tecnologías para el desarrollo de software. Nuestro equipo de expertos domina una amplia variedad de herramientas y lenguajes de programación, lo que nos permite ofrecer soluciones personalizadas y de alta calidad para cualquier tipo de proyecto. Nuestra experiencia abarca todas las tecnologías más relevantes en la industria del software. Además, dominamos un amplio conjunto de tecnologías de Inteligencia Artificial (IA) que nos permiten ofrecer soluciones innovadoras y de vanguardia.</p>
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentThree" aria-expanded="false" aria-controls="extraContentThree">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentThree" align="left">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold ">Tecnologías que utilizamos</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Python:</strong> <br> Utilizamos Python para el desarrollo de aplicaciones backend, procesamiento de datos, inteligencia artificial, y automatización de tareas.</li>
+                            <li><strong>JavaScript:</strong> <br> Usamos JavaScript para el desarrollo de aplicaciones frontend interactivas, con el soporte de frameworks como React, Angular y Vue.js.</li>
+                            <li><strong>Java:</strong> <br> Java es nuestra opción para desarrollar aplicaciones empresariales robustas, aplicaciones móviles Android, y sistemas de backend a gran escala.</li>
+                            <li><strong>MongoDB:</strong> <br> MongoDB es nuestra base de datos NoSQL preferida, utilizada para gestionar grandes volúmenes de datos de manera eficiente y flexible.</li>
+                            <li><strong>React:</strong> <br> Usamos React para crear interfaces de usuario dinámicas y altamente interactivas, aprovechando su capacidad de renderizado eficiente.</li>
+                            <li><strong>Node.js:</strong> <br> Node.js es nuestra herramienta de elección para crear servidores backend rápidos y escalables, usando JavaScript del lado del servidor.</li>
+                            <li><strong>SQL:</strong> <br> Además de MongoDB, también utilizamos bases de datos SQL como MySQL y PostgreSQL para aplicaciones que requieren estructuras de datos relacionales.</li>
+                            <li><strong>Docker:</strong> <br> Docker nos permite crear contenedores para aplicaciones, facilitando el desarrollo, pruebas y despliegue en entornos controlados y escalables.</li>
+                            <li><strong>Git:</strong> <br> Usamos Git para el control de versiones, asegurando un desarrollo colaborativo eficiente y un seguimiento preciso de los cambios en el código.</li>
+                            <li><strong>Cloud Computing (AWS, Azure, Google Cloud):</strong> <br> Nuestra experiencia en plataformas de nube como AWS, Azure y Google Cloud nos permite crear soluciones escalables y de alta disponibilidad.</li>
+                            <li><strong>Inteligencia Artificial:</strong> <br> Integramos tecnologías de IA como <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Keras</strong>, <strong>OpenAI</strong>, <strong>ChatGPT</strong>, <strong>GPT-3</strong>, <strong>GPT-4</strong>, <strong>BERT</strong>, <strong>DALL·E</strong>, <strong>Hugging Face</strong> para crear soluciones inteligentes y modelos predictivos.</li>
+                            <li><strong>Machine Learning:</strong> <br> Aplicamos técnicas de Machine Learning para mejorar la toma de decisiones, la personalización de servicios y la optimización de procesos.</li>
+                            <li><strong>Big Data:</strong> <br> Utilizamos herramientas de Big Data como <strong>Hadoop</strong> y <strong>Spark</strong> para procesar y analizar grandes volúmenes de datos en tiempo real.</li>
+                            <li><strong>DevOps:</strong> <br> Implementamos prácticas de DevOps con herramientas como <strong>Jenkins</strong>, <strong>Kubernetes</strong> y <strong>Docker</strong> para automatizar el ciclo de vida del software.</li>
+                        </ul>
+                        <h4 class="text-uppercase font-weight-bold ">Ventajas de usar estas tecnologías</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Escalabilidad:</strong> <br> Gracias a las tecnologías modernas como <strong>React</strong> y <strong>Node.js</strong>, nuestras soluciones son fácilmente escalables para crecer con tu negocio.</li>
+                            <li><strong>Rendimiento optimizado:</strong> <br> Utilizamos herramientas como <strong>MongoDB</strong> y <strong>Docker</strong> para garantizar aplicaciones rápidas y eficientes en todo momento.</li>
+                            <li><strong>Innovación constante:</strong> <br> Con tecnologías como <strong>IA</strong> y <strong>Machine Learning</strong>, nos aseguramos de que nuestras soluciones sean de vanguardia y siempre estén optimizadas para el futuro.</li>
+                            <li><strong>Flexibilidad:</strong> <br> Usamos un enfoque flexible y ágil, adaptándonos a las necesidades cambiantes del mercado y de tu negocio, utilizando las mejores herramientas para cada caso.</li>
+                            <li><strong>Seguridad:</strong> <br> Implementamos las mejores prácticas de seguridad utilizando tecnologías como <strong>Git</strong> y <strong>Cloud Computing</strong> para proteger tus datos y aplicaciones.</li>
+                            <li><strong>Desarrollo rápido:</strong> <br> Con el uso de <strong>Node.js</strong> y <strong>React</strong>, aceleramos el proceso de desarrollo sin comprometer la calidad del producto final.</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#ocho" class="more">Solicita una consulta personalizada</a>
+</section>
+
+<!-- Nosotros -->
+<section id="ocho" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
+    <div class="inner">
+        <article class="box">
+            <header>
+                <h2>Nosotros</h2>
+            </header>
+            <div class="content" style="text-align: left;">
+                <p>Somos una <strong>consultora en Inteligencia Artificial y Software Factory</strong>, dedicada a transformar ideas en soluciones innovadoras que redefinen la manera en que las empresas operan y crecen en la era digital. Nuestro propósito es ser un puente hacia el futuro, ayudando a las organizaciones a adaptarse y prosperar en la <strong>nueva revolución tecnológica impulsada por la Inteligencia Artificial</strong>.</p>
+                <p>Combinamos experiencia en <strong>desarrollo de software a medida</strong> con el poder de la IA para crear herramientas que optimizan procesos, impulsan la eficiencia y generan resultados tangibles, trabajamos codo a codo con nuestros clientes para diseñar soluciones que no solo resuelvan problemas actuales, sino que también preparen el camino para un crecimiento sostenible.</p>
+
+            </div>
+            <footer>
+                <button class="btn btn-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#extraContentT" aria-expanded="false" aria-controls="extraContentT">
+                    Descubre Más
+                </button>
+                <div class="collapse mt-3" id="extraContentT" align="left">
+                    <div class="card card-body" style="background: rgba(0, 0, 0, 0.6); border-radius: 8px;">
+                        <h4 class="text-uppercase font-weight-bold">Nuestra Visión</h4>
+                        <p>Ser reconocidos como líderes en la integración de Inteligencia Artificial y desarrollo de software, marcando un estándar de excelencia en la creación de soluciones tecnológicas que transformen industrias y mejoren la calidad de vida de las personas.</p>
+
+                        <h4 class="text-uppercase font-weight-bold">Nuestra Misión</h4>
+                        <p>Ayudar a las organizaciones a alcanzar su máximo potencial mediante el diseño de soluciones innovadoras, personalizadas y sostenibles, que combinen lo mejor de la tecnología con un enfoque humano y ético.</p>
+
+                        <h4 class="text-uppercase font-weight-bold">Nuestros Valores</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Innovación:</strong> Estamos comprometidos con la creación constante de nuevas ideas y soluciones que impulsen el progreso.</li>
+                            <li><strong>Excelencia:</strong> Nos esforzamos por superar las expectativas en cada proyecto, garantizando calidad en cada detalle.</li>
+                            <li><strong>Ética:</strong> Operamos con integridad, respeto y responsabilidad, priorizando siempre el bienestar de nuestros clientes y colaboradores.</li>
+                            <li><strong>Adaptabilidad:</strong> Creemos en la importancia de evolucionar junto con las tendencias tecnológicas y las necesidades del mercado.</li>
+                            <li><strong>Respeto por la propiedad privada:</strong> Valoramos y protegemos los derechos de propiedad intelectual y la privacidad de los datos de nuestros clientes.</li>
+                            <li><strong>Trabajo en equipo:</strong> Fomentamos la colaboración como base para lograr resultados extraordinarios.</li>
+                        </ul>
+
+                        <h4 class="text-uppercase font-weight-bold">Nuestros Objetivos</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Impulsar la transformación digital:</strong> Ayudar a las empresas a adoptar tecnologías de vanguardia para mejorar su competitividad.</li>
+                            <li><strong>Diseñar soluciones personalizadas:</strong> Crear herramientas tecnológicas adaptadas a las necesidades únicas de cada cliente.</li>
+                            <li><strong>Promover la sostenibilidad:</strong> Desarrollar soluciones que sean responsables con el medio ambiente y la sociedad.</li>
+                            <li><strong>Fomentar relaciones duraderas:</strong> Construir alianzas basadas en la confianza, la transparencia y el compromiso mutuo.</li>
+                        </ul>
+
+                        <h4 class="text-uppercase font-weight-bold">Nuestras Metas</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Expansión global:</strong> Establecer nuestra presencia en mercados internacionales, llevando nuestras soluciones a nuevos horizontes.</li>
+                            <li><strong>Liderazgo en innovación:</strong> Ser pioneros en el desarrollo de tecnologías disruptivas que marquen la diferencia en el mercado.</li>
+                            <li><strong>Fortalecer el talento:</strong> Crear un entorno que inspire a nuestros colaboradores a crecer profesional y personalmente.</li>
+                            <li><strong>Impacto social:</strong> Contribuir al bienestar de las comunidades a través de proyectos tecnológicos que generen un cambio positivo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+    <a href="#footer" class="more">Solicita una consulta personalizada</a>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner" id="contact">
+        <h2>Contacto</h2>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // Inicializa EmailJS con tu clave pública
+                emailjs.init({
+                    publicKey: "uhxbu5G0vZT5D8IlV", // Reemplaza con tu clave pública
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Evita el envío predeterminado del formulario
+    
+                    // Enviar el formulario con EmailJS
+                    emailjs.sendForm('service_7mbxdq1', 'template_llr9ne6', this)
+                        .then(() => {
+                            alert('¡Mensaje enviado con éxito!');
+                            this.reset(); // Limpia el formulario después del envío
+                        }, (error) => {
+                            alert('Error al enviar el mensaje: ' + error.text);
+                        });
+                });
+            }
+        </script>
+
+<ul class="icons" style="margin: -2rem auto 2rem auto;">
+    <li><a href="https://www.linkedin.com/in/sebastian-paysse-946771156/" class="icon round fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+    <li><a href="#" class="icon round fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+    <li><a href="https://www.facebook.com/profile.php?id=61569515390412" class="icon round fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+    <li><a href="https://www.instagram.com/usatiendafacil/" class="icon round fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+</ul>
+
+
+        <form id="contact-form">
+            <!-- Campo oculto para simplificar el tutorial -->
+            <input type="hidden" name="contact_number" value="697483">
+            <div class="field half first">
+                <label for="name">Nombre</label>
+                <input name="user_name" id="name" type="text" placeholder="Name" required>
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input name="user_email" id="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="field half first">
+                <label for="Empresa">Empresa</label>
+                <input name="Empresa" id="Empresa" type="text" placeholder="Empresa" required>
+            </div>
+            <div class="field half">
+                <label for="NúmeroCon">Número de contacto</label>
+                <input name="NúmeroCon" id="NúmeroCon" type="text" placeholder="Número de contacto" required>
+            </div>
+            <div class="field">
+                <label for="message">Mensaje (Por favor agregue motivo y algunos números de contacto).</label>
+                <textarea name="message" id="message" rows="6" placeholder="Mensaje" required></textarea>
+            </div>
+            <ul class="actions">
+                <li><input value="Enviar mensaje" class="button alt" type="submit"></li>
+            </ul>
+        </form>
+
+        
+    </div>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1da851;
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+    <a href="https://wa.me/5491161409440?text=¡Hola! Quiero hacerte una consulta." 
+        target="_blank" 
+        class="whatsapp-float" 
+        title="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+    </a>
+
+
+
+</footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
