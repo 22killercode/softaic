@@ -110,20 +110,40 @@
     <!-- Banner -->
     <section id="banner" class="bg-img" data-bg="ia3.jpg"  style="margin: auto !important; min-height: auto !important;">
         <div>
-            <h4 id="" style="color: white; font-weight: 400; text-shadow: 1px 1px 2px black; text-transform: none;">
-                Consultoría en implementación de agentes IA y software factory.
-            </h4>
+            <style>
+                @media screen and (orientation: portrait) {
+                    #celUp {
+                        margin-top: -3rem;
+                    }
+                    #celDown {
+                        margin-top: 5rem;
+                    }
+                }
             
-            <br>
-            <h1 style="color: white; font-weight: 900; text-shadow: 1px 1px 2px black;">
-                TBS-IA
-            </h1>
-            <br>
-            <p style="color: white; text-shadow: 1px 1px 2px black;">
-                The Best Staff in Intelligence Agents Consulting
-            </p>
+                @media screen and (min-width: 10px) and (max-width: 400px) {
+                    #celUp,
+                    #celDown {
+                        margin-top: 0 !important;
+                        font-size: 0.9rem !important
+                    }
+                }
+            </style>
+            
+            <div id="celUp">
+                <h4 id="" style="color: white; font-weight: 400; text-shadow: 1px 1px 2px black; text-transform: none;">
+                    Consultoría en implementación de agentes IA y software factory.
+                </h4>
+                <br>
+                <h1 style="color: white; font-weight: 900; text-shadow: 1px 1px 2px black;">
+                    TBS-IA
+                </h1>
+                <br>
+                <p style="color: white; text-shadow: 1px 1px 2px black;">
+                    The Best Staff in Intelligence Agents Consulting
+                </p>
+            </div>
             <br><br>
-            <h5>
+            <h5 id="celDown">
                 <ul style="list-style-type: none; padding: 0; margin: 0; color: white; text-shadow: 1px 1px 2px black;" align="left">
                     <li><strong>IT Services:</strong> Soluciones tecnológicas personalizadas para tu negocio</li>
                     <li><strong>Agentes IA:</strong> Implementamos Agentes de inteligencia artificial para optimizar tus procesos</li>
@@ -525,7 +545,7 @@
             </footer>
         </article>
     </div>
-    <a href="#seven" class="more">Solicita una consulta personalizada</a>
+    <a href="#mark" class="more">Solicita una consulta personalizada</a>
 </section>
 
 <!-- Marketing Digital y Community Manager -->
@@ -568,6 +588,12 @@
                             <li><strong>Resultados medibles:</strong> <br> Permiten optimizar inversiones publicitarias y alcanzar objetivos específicos con precisión.</li>
                             <li><strong>Adaptabilidad:</strong> <br> Las estrategias digitales se ajustan rápidamente a los cambios en el comportamiento del consumidor y las tendencias del mercado.</li>
                         </ul>
+                        <h4 class="text-uppercase font-weight-bold">Nuestro personal altamente calificado</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Expertos en estrategias digitales:</strong> <br> Contamos con un equipo de especialistas en marketing digital y community management, con experiencia en diversas industrias y mercados.</li>
+                            <li><strong>Capacitación constante:</strong> <br> Nuestro personal se mantiene actualizado en las últimas tendencias, herramientas y metodologías para ofrecer soluciones innovadoras y efectivas.</li>
+                            <li><strong>Compromiso con la excelencia:</strong> <br> Cada miembro de nuestro equipo está dedicado a superar las expectativas de nuestros clientes, asegurando resultados tangibles y sostenibles.</li>
+                        </ul>
                     </div>
                     <div style="text-align: center; margin-top: 2rem;">
                         <a href="#footer" style="text-decoration: none; background-color: #fff; padding: 0.75rem 1.5rem; border-radius: 5px; font-weight: bold;">Solicita una consulta ahora</a>
@@ -576,8 +602,9 @@
             </footer>
         </article>
     </div>
-    <a href="#six" class="more">Solicita una consulta personalizada</a>
+    <a href="#seven" class="more">Solicita una consulta personalizada</a>
 </section>
+
 
 <!-- Tecnologías que utilizamos -->
 <section id="seven" class="wrapper post bg-img" data-bg="ia3.jpg" style="height: auto !important">
