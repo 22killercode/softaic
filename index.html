@@ -49,16 +49,18 @@
     
     </style>
 
-<header id="header" style="background: transparent !important; margin-bottom: -10rem;">
+<header id="header" style="background: transparent !important; margin-bottom: -10rem; display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
     <!-- Logo para pantallas grandes (horizontales) -->
-    <div class="logo" id="log1" hidden>
-        <a href="index.html">tbs-ia.com / Software Factory & Intelligence Agents Consulting <span></span></a>
+    <div id="log1" class="logo-container" style="display: flex; align-items: center; margin: -1rem 0 0 -19rem; ">
+        <a href="index.html">
+            <img src="images/logo.jpg" style="width: 25%; border-radius: 0.3rem" alt="Logo de la empresa">
+        </a>
     </div>
-
     <!-- Logo para pantallas pequeñas (celulares) -->
-    <div class="logo" id="log2">
+    <div class="logo" id="log2" style="display: flex; align-items: center; margin-left: 0;">
         <a href="index.html">tbs-ia.com Software & A. I. Cons. <span></span></a>
     </div>
+    <!-- Enlace al menú -->
     <a href="#menu" style="margin-right: 1rem;"><span>Menu</span></a>
 </header>
 
@@ -109,7 +111,7 @@
 
     <!-- Banner -->
     <section id="banner" class="bg-img" data-bg="ia3.jpg"  style="margin: auto !important; min-height: auto !important;">
-        <div>
+        <div style="background-color: transparent; opacity: 1;">
             <style>
                 @media screen and (orientation: portrait) {
                     #celUp {
@@ -128,13 +130,12 @@
                     }
                 }
             </style>
-            
-            <div id="celUp">
+            <div id="celUp" style="opacity: 1 !important;">
                 <h4 id="" style="color: white; font-weight: 400; text-shadow: 1px 1px 2px black; text-transform: none;">
                     Consultoría en implementación de agentes IA y software factory.
                 </h4>
                 <br>
-                <h1 style="color: white; font-weight: 900; text-shadow: 1px 1px 2px black;">
+                <h1 style="font-size: 8rem ;color: white; font-weight: 900; text-shadow: 1px 1px 2px black;">
                     TBS-IA
                 </h1>
                 <br>
@@ -143,7 +144,7 @@
                 </p>
             </div>
             <br><br>
-            <h5 id="celDown">
+            <h5 id="celDown" style="opacity: 1 !important;">
                 <ul style="list-style-type: none; padding: 0; margin: -1rem 0 0 0; color: white; text-shadow: 1px 1px 2px black;" align="left">
                     <li><strong>IT Services:</strong> Soluciones tecnológicas personalizadas para tu negocio</li>
                     <li><strong>Agentes IA:</strong> Implementamos Agentes de inteligencia artificial para optimizar tus procesos</li>
@@ -155,7 +156,6 @@
                 </ul>
             </h5>
         </div>
-        
         <a href="#one" class="more">Learn More</a>
     </section>
 
